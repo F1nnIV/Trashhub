@@ -12,6 +12,7 @@ body {
     #00ff00 99%,
     #2600ff 100%
   );
+  overflow: hidden;
 
   header {
     height: 10vh;
@@ -23,15 +24,19 @@ body {
       animation-duration: 1.5s;
       animation-name: slidein;
       animation-iteration-count: infinite;
+      font-family: Comic Sans MS;
     }
 
     @keyframes slidein {
       from {
         color: white;
+        font-weight: 200;
       }
 
       to {
         color: black;
+        font-weight: 900;
+        margin-top: 50px;
       }
     }
   }
@@ -40,8 +45,5 @@ body {
     transform: rotate(20deg) translate(-50%, -80%);
     top: 100%;
     width: 100px;
-    .dog-cutout-speechbubble {
-      display: none;
-    }
   }
 }

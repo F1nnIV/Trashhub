@@ -8,6 +8,7 @@
 body {
   height: 100vh;
   background-image: linear-gradient(45deg, #ff0008 0%, #00ff00 99%, #2600ff 100%);
+  overflow: hidden;
 }
 
 body header {
@@ -32,23 +33,30 @@ body header h1 {
           animation-name: slidein;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  font-family: Comic Sans MS;
 }
 
 @-webkit-keyframes slidein {
   from {
     color: white;
+    font-weight: 200;
   }
   to {
     color: black;
+    font-weight: 900;
+    margin-top: 50px;
   }
 }
 
 @keyframes slidein {
   from {
     color: white;
+    font-weight: 200;
   }
   to {
     color: black;
+    font-weight: 900;
+    margin-top: 50px;
   }
 }
 
@@ -58,9 +66,5 @@ body section a img {
           transform: rotate(20deg) translate(-50%, -80%);
   top: 100%;
   width: 100px;
-}
-
-body section a img .dog-cutout-speechbubble {
-  display: none;
 }
 /*# sourceMappingURL=style.css.map */
