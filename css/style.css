@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(45deg, #ff0008 0%, #00ff00 99%, #2600ff 100%);
+}
+
+body header {
+  height: 10vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body header h1 {
+  font-family: "Comic Sans";
+}
+
+body section a img {
+  position: absolute;
+  -webkit-transform: rotate(20deg) translate(-50%, -80%);
+          transform: rotate(20deg) translate(-50%, -80%);
+  top: 100%;
+  width: 100px;
+}
+
+body section a img .dog-cutout-speechbubble {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
