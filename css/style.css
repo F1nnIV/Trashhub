@@ -26,7 +26,30 @@ body header {
 }
 
 body header h1 {
-  font-family: "Comic Sans";
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    color: white;
+  }
+  to {
+    color: black;
+  }
+}
+
+@keyframes slidein {
+  from {
+    color: white;
+  }
+  to {
+    color: black;
+  }
 }
 
 body section a img {

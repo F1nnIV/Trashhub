@@ -20,7 +20,19 @@ body {
     display: flex;
     flex-direction: column;
     h1 {
-      font-family: "Comic Sans";
+      animation-duration: 1.5s;
+      animation-name: slidein;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes slidein {
+      from {
+        color: white;
+      }
+
+      to {
+        color: black;
+      }
     }
   }
   section a img {
