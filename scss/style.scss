@@ -14,7 +14,8 @@ body {
   );
   overflow: hidden;
 
-  header {
+  header,
+  #games-section {
     height: 10vh;
     align-items: center;
     width: 100%;
@@ -45,5 +46,43 @@ body {
     transform: rotate(20deg) translate(-50%, -80%);
     top: 100%;
     width: 100px;
+  }
+  .games {
+    margin-top: 50%;
+    width: 120px;
+    border: red solid 5px;
+    padding: 30px;
+    font-family: Comic sans-serif;
+    font-size: large;
+    box-shadow: 1px -1px teal;
+    animation: changeColor 1.4s linear infinite alternate;
+    color: red;
+  }
+  @keyframes changeColor {
+    0% {
+      color: black;
+      background: white;
+    }
+    20% {
+      color: white;
+      background: red;
+    }
+
+    40% {
+      color: green;
+      background: white;
+    }
+    60% {
+      color: pink;
+      background: red;
+    }
+    80% {
+      color: green;
+      background: white;
+    }
+    100% {
+      color: green;
+      background: red;
+    }
   }
 }

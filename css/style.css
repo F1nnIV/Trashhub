@@ -11,7 +11,8 @@ body {
   overflow: hidden;
 }
 
-body header {
+body header,
+body #games-section {
   height: 10vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -26,7 +27,8 @@ body header {
           flex-direction: column;
 }
 
-body header h1 {
+body header h1,
+body #games-section h1 {
   -webkit-animation-duration: 1.5s;
           animation-duration: 1.5s;
   -webkit-animation-name: slidein;
@@ -66,5 +68,73 @@ body section a img {
           transform: rotate(20deg) translate(-50%, -80%);
   top: 100%;
   width: 100px;
+}
+
+body .games {
+  margin-top: 50%;
+  width: 120px;
+  border: red solid 5px;
+  padding: 30px;
+  font-family: Comic sans-serif;
+  font-size: large;
+  -webkit-box-shadow: 1px -1px teal;
+          box-shadow: 1px -1px teal;
+  -webkit-animation: changeColor 1.4s linear infinite alternate;
+          animation: changeColor 1.4s linear infinite alternate;
+  color: red;
+}
+
+@-webkit-keyframes changeColor {
+  0% {
+    color: black;
+    background: white;
+  }
+  20% {
+    color: white;
+    background: red;
+  }
+  40% {
+    color: green;
+    background: white;
+  }
+  60% {
+    color: pink;
+    background: red;
+  }
+  80% {
+    color: green;
+    background: white;
+  }
+  100% {
+    color: green;
+    background: red;
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    color: black;
+    background: white;
+  }
+  20% {
+    color: white;
+    background: red;
+  }
+  40% {
+    color: green;
+    background: white;
+  }
+  60% {
+    color: pink;
+    background: red;
+  }
+  80% {
+    color: green;
+    background: white;
+  }
+  100% {
+    color: green;
+    background: red;
+  }
 }
 /*# sourceMappingURL=style.css.map */
